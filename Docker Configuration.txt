@@ -1,0 +1,39 @@
+    1 yum update
+    2  yum install docker -y
+    3  docker images
+    4  systemctl start docker
+    5  docker images
+    6  docker pull jenkins 
+    7  systemctl status docker
+    8  docker pull jenkins/jenkins:lts-jdk17 
+    9  docker images
+   10  docker ps 
+   11  docker ps -a 
+   12  docker pull jenkins/jenkins:lts-jdk17 
+   13  docker ps 
+   14  docker images
+   15  docker run -itd --name jenkins1 -p 7070:8080 jenkins/jenkins:lts-jdk17 
+   16  docker ps
+   17  yum install docker* -y
+   18  systemctl status docker
+   19  systemctl start docker
+   20  systemctl status docker
+   21  docker ps
+   22  docker images
+   23  docker rmi dda9cfa9f451
+   24  docker ps -a
+   25  docker rm 38e441b348cd
+   26  docker rmi dda9cfa9f451
+   27  mkdir Docker1
+   28  cd Docker1/
+   29  touch Dockerfile
+   30  vi Dockerfile 
+   31  vim file1.txt
+   32  vi Dockerfile 
+   33  docker build -t first:v1 .
+   34  docker run -it first:v1 /bin/bash
+   35  docker ps
+   36  docker images
+   37  vi Dockerfile 
+   38  docker build -t first:v2 .
+   39  docker run -it first:v2 /bin/bash
